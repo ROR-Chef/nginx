@@ -26,6 +26,6 @@ supports 'suse'
 supports 'opensuse'
 supports 'opensuseleap'
 
-source_url 'https://github.com/chef-cookbooks/nginx'
-issues_url 'https://github.com/chef-cookbooks/nginx/issues'
+source_url 'https://github.com/chef-cookbooks/nginx' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/nginx/issues' if respond_to?(:issues_url)
 chef_version '>= 12.14' if respond_to?(:chef_version)
